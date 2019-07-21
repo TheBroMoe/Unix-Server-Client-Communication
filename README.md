@@ -1,36 +1,32 @@
-CMPUT 379: Assignment 2 Design Document
+# How to run program: 
 
-Mohammad Kebbi; kebbi; 1496572 Zachary Kist; zkist; 1508381
+* Compile Server and Client by entering 'make' in the terminal
 
-How to run program: 
+## For Running Server:
 
-Compile Server and Client by entering 'make' in the terminal
+* run './sf.out directory port' in the terminal where directory is the relative or absolute path of the repository of files and port is the port to which the server will listen to incoming clients
 
-For Running Server:
+## For Closing Server: 
 
-run './sf.out directory port' in the terminal where directory is the relative or absolute path of the repository of files and port is the port to which the server will listen to incoming clients
+* Sending a SIGTERM by entering 'kill (pid)' in the terminal will result in the server's orderly termination and write of the .dedup file.
 
-For Closing Server: 
+## For Running Client: 
 
-Sending a SIGTERM by entering 'kill (pid)' in the terminal will result in the server's orderly termination and write of the .dedup file.
+* run './cf.out address port' in the terminal where address is the IP Address (Server is set up in local 127.0.0.1) and port is the port to which the server is set up to
 
-For Running Client: 
-
-run './cf.out address port' in the terminal where address is the IP Address (Server is set up in local 127.0.0.1) and port is the port to which the server is set up to
-
-For Closing Client: 
+## For Closing Client: 
 
 By sending a 'q' command, the server will close the client's socket and user will be returned to terminal
 
-Acknowledgements: 
+# Acknowledgements: 
 
 Used Lab 1 server-client files for foundation for using pthreads and sockets
 
 Used XMLexample2.c from lab as basis for the XML reader
 
-Work Balance between Partners:
+# Work Balance between Partners:
 
-Work done by both individuals:
+## Work done by both individuals:
 
 - Internal Data Structure implementation
 
@@ -42,7 +38,7 @@ Work done by both individuals:
 
 - Debugging
 
-Mohammad Kebbi:
+## Mohammad Kebbi:
 
 - Methods used to modify and use Internal Data Structures
 
@@ -51,7 +47,7 @@ Mohammad Kebbi:
 - Mutual Exclusion implementation
 
 
-Zachary Kist:
+## Zachary Kist:
 
  - .dedup reading and writing implementation
 
@@ -60,4 +56,4 @@ Zachary Kist:
  - Daemonic process Implementation
 
 
-This assignment was tested on the VM
+This assignment was tested using a Unix virtual machine running ubuntu
